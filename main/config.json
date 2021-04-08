@@ -1,0 +1,4 @@
+{
+"Port": "8080",
+"MySql_Connection_String" : "suser:1532@tcp(192.168.29.113:3306)/MONEYSAVERDB?timeout=3s&readTimeout=3s"
+}

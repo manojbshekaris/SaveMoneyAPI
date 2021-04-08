@@ -4,6 +4,7 @@ import (
 	model "moneysaverapi/savemoneyapi_model"
 )
 
+//for implementing SQL Methods.
 type ISqlMethod interface {
 	SQLGETTransactionTypes() ([]model.StructGetTransactionTypes, error)
 	//Income

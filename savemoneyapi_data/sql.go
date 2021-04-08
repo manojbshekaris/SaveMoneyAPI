@@ -13,7 +13,7 @@ type StructSQL struct{}
 
 var Methods ISqlMethod = new(StructSQL)
 
-func (structSql StructSQL) SQLGETTransactionTypes() ([]model.StructGetTransactionTypes, error) {
+func (Methods StructSQL) SQLGETTransactionTypes() ([]model.StructGetTransactionTypes, error) {
 	var trnTypes []model.StructGetTransactionTypes
 	dataBaseObj, err := sql.Open("mysql", config.GetConfigDetails().MySql_Connection_String)
 	if err != nil {
